@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TasteBite - Order Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>TasteBite</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html">Order Now</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Order Section -->
+    <main>
+
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+
+            <label for="name">Full Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <br>
+            <input type="tel" id="phone" name="phone" required>
+
+            <br><br>
+
+            <label for="food">Choose Your Food:</label>
+            <br>
+
+<br>
+
+   <select id="food" name="food">
+    <option value="199">Margherita Pizza - ₹199</option>
+    <option value="249">Farmhouse Pizza - ₹249</option>
+    <option value="229">Paneer Pizza - ₹229</option>
+    <option value="99">Veg Burger - ₹99</option>
+    <option value="129">Cheese Burger - ₹129</option>
+    <option value="89">Cold Coffee - ₹89</option>
+    <option value="59">Fresh Lime Soda - ₹59</option>
+</select>
+            <br><br>
+
+            <label for="quantity">Quantity:</label>
+            <br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            <h3>Total Price : ₹<span
+            id="totalPrice">199</span></h3>
+
+            <br><br>
+
+            <label for="address">Delivery Address:</label>
+            <br>
+            <textarea id="address" name="address" rows="4" cols="30"
+                placeholder="Enter your address"></textarea>
+
+            <br><br>
+
+            <label for="payment">Payment Method:</label>
+            <br>
+
+            <select id="payment" name="payment">
+                <option value="cod">Cash on Delivery</option>
+                <option value="upi">UPI</option>
+                <option value="card">Card</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 TasteBite. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
